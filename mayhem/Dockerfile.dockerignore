@@ -1,0 +1,14 @@
+# Build-context pruning for mayhem/Dockerfile: keep the full repo (including .git), drop local
+# build outputs and editor/OS noise.
+build/
+build-fuzz/
+build-test/
+out/
+*.o
+*.a
+*.so
+*.dylib
+**/__pycache__/
+.DS_Store
+*.swp
+*~

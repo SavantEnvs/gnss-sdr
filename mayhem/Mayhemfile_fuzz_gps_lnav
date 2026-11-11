@@ -1,0 +1,9 @@
+project: savantenvs/gnss-sdr
+target: fuzz_gps_lnav
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gps_lnav/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_gps_lnav
+    libfuzzer: true
+    timeout: 30
